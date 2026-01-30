@@ -58,12 +58,13 @@ done
 if [ ${EXISTING_COUNT} -gt 0 ]; then
     echo "⚠️  Found ${EXISTING_COUNT} existing Netlify skill(s) in ${SKILLS_DIR}"
     echo ""
-    read -p "Overwrite existing skills? (y/N): " -n 1 -r
+    read -p "Update/overwrite existing skills? (y/N): " -n 1 -r
     echo ""
     if [[ ! $REPLY =~ ^[Yy]$ ]]; then
         echo "Installation cancelled."
         exit 0
     fi
+    echo ""
 fi
 
 # Copy skills
