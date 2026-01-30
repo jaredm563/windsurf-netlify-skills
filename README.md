@@ -62,113 +62,33 @@
 
 ## 🚀 Quick Start
 
-### One-Line Install (Recommended)
-
+**macOS / Linux / Git Bash:**
 ```bash
-# Clone and run the installer
 git clone https://github.com/jaredm563/windsurf-netlify-skills.git && cd windsurf-netlify-skills && ./install.sh
 ```
-
-The installer will:
-- Detect your platform automatically
-- Create the skills directory if needed
-- Check for existing skills and prompt before overwriting
-- Copy all 8 skills to the correct location
 
 **Windows PowerShell:**
 ```powershell
 git clone https://github.com/jaredm563/windsurf-netlify-skills.git; cd windsurf-netlify-skills; .\install.ps1
 ```
 
----
+That's it! Windsurf will automatically use these skills when working on Netlify projects.
 
-### Manual Installation
-
-#### Option 1: Clone and Copy
+<details>
+<summary>Manual installation</summary>
 
 ```bash
-# Clone the repository
 git clone https://github.com/jaredm563/windsurf-netlify-skills.git
 cd windsurf-netlify-skills
 
 # macOS/Linux
 cp -r netlify-* ~/.windsurf/skills/
 
-# Windows (PowerShell)
+# Windows PowerShell
 Copy-Item netlify-* -Destination $env:USERPROFILE\.windsurf\skills\ -Recurse
-
-# Windows (Command Prompt)
-xcopy netlify-* %USERPROFILE%\.windsurf\skills\ /E /I
 ```
-
-#### Option 2: Download Individual Skills
-
-1. Browse to the skill folder you want (e.g., `netlify-serverless-functions`)
-2. Download the `SKILL.md` file
-3. Create the directory and place the file:
-
-```bash
-# macOS/Linux
-mkdir -p ~/.windsurf/skills/netlify-serverless-functions
-# Then move the downloaded SKILL.md into that directory
-
-# Windows
-mkdir %USERPROFILE%\.windsurf\skills\netlify-serverless-functions
-# Then move the downloaded SKILL.md into that directory
-```
-
-#### Option 3: Direct Git Clone into Skills Directory
-
-```bash
-# macOS/Linux
-cd ~/.windsurf/skills
-git clone https://github.com/jaredm563/windsurf-netlify-skills.git
-mv windsurf-netlify-skills/netlify-* .
-rm -rf windsurf-netlify-skills
-
-# Windows (PowerShell)
-cd $env:USERPROFILE\.windsurf\skills
-git clone https://github.com/jaredm563/windsurf-netlify-skills.git
-Move-Item windsurf-netlify-skills\netlify-* .
-Remove-Item windsurf-netlify-skills -Recurse -Force
-```
-
-### Verify Installation
-
-Check that the skills were copied:
-
-```bash
-# macOS/Linux
-ls ~/.windsurf/skills/netlify-*
-
-# Windows (PowerShell)
-Get-ChildItem $env:USERPROFILE\.windsurf\skills\netlify-*
-
-# Windows (Command Prompt)
-dir %USERPROFILE%\.windsurf\skills\netlify-*
-```
-
-You should see 8 directories:
-
-<details>
-<summary>View all skill directories</summary>
-
-- `netlify-blobs`
-- `netlify-creating-sites`
-- `netlify-db`
-- `netlify-edge-functions`
-- `netlify-environment-variables`
-- `netlify-forms`
-- `netlify-image-cdn`
-- `netlify-serverless-functions`
 
 </details>
-
-### Using the Skills
-
-Once installed, Windsurf will automatically reference these skills when working on Netlify projects. No additional setup needed.
-
-> **How it works**: Windsurf's AI assistant will automatically detect when you're working on Netlify projects and provide context-aware suggestions based on these skills.
 
 ## 📖 Skill Categories
 
