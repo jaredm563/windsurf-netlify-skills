@@ -21,39 +21,39 @@
 <tr>
 <td width="50%" valign="top">
 
-### 🎯 Core Platform Features
+### Core Platform Features
 
-- 🚀 **[Creating Sites](./netlify-creating-sites/SKILL.md)**  
+- **[Creating Sites](./netlify-creating-sites/SKILL.md)**  
   Initialize and link Netlify sites using the CLI
 
-- 🔐 **[Environment Variables](./netlify-environment-variables/SKILL.md)**  
+- **[Environment Variables](./netlify-environment-variables/SKILL.md)**  
   Manage environment variables for secure configuration
 
-- 📝 **[Forms](./netlify-forms/SKILL.md)**  
+- **[Forms](./netlify-forms/SKILL.md)**  
   Handle form submissions with spam filtering and notifications
 
-### ⚡ Compute & Functions
+### Compute & Functions
 
-- 🔧 **[Serverless Functions](./netlify-serverless-functions/SKILL.md)**  
+- **[Serverless Functions](./netlify-serverless-functions/SKILL.md)**  
   Create serverless functions (synchronous, background, and scheduled)
 
-- 🌐 **[Edge Functions](./netlify-edge-functions/SKILL.md)**  
+- **[Edge Functions](./netlify-edge-functions/SKILL.md)**  
   Deploy ultra-low latency edge functions for personalization and routing
 
 </td>
 <td width="50%" valign="top">
 
-### 💾 Data & Storage
+### Data & Storage
 
-- 🗄️ **[Netlify DB](./netlify-db/SKILL.md)**  
+- **[Netlify DB](./netlify-db/SKILL.md)**  
   Use Netlify DB (Neon Postgres) for relational data storage
 
-- 📦 **[Blobs](./netlify-blobs/SKILL.md)**  
+- **[Blobs](./netlify-blobs/SKILL.md)**  
   Store unstructured data with key-value storage
 
-### 🖼️ Media & Assets
+### Media & Assets
 
-- 🎨 **[Image CDN](./netlify-image-cdn/SKILL.md)**  
+- **[Image CDN](./netlify-image-cdn/SKILL.md)**  
   Transform and optimize images on-demand
 
 </td>
@@ -62,11 +62,11 @@
 
 ## 🚀 Quick Start
 
-> **💡 Tip**: Choose the installation method that works best for your workflow
+> **Tip**: Choose the installation method that works best for your workflow
 
 ### Importing into Windsurf
 
-#### 📋 Option 1: Clone and Copy (Recommended)
+#### Option 1: Clone and Copy (Recommended)
 
 ```bash
 # Clone the repository
@@ -83,7 +83,7 @@ Copy-Item netlify-* -Destination $env:USERPROFILE\.windsurf\skills\ -Recurse
 xcopy netlify-* %USERPROFILE%\.windsurf\skills\ /E /I
 ```
 
-#### 📥 Option 2: Download Individual Skills
+#### Option 2: Download Individual Skills
 
 1. Browse to the skill folder you want (e.g., `netlify-serverless-functions`)
 2. Download the `SKILL.md` file
@@ -99,7 +99,7 @@ mkdir %USERPROFILE%\.windsurf\skills\netlify-serverless-functions
 # Then move the downloaded SKILL.md into that directory
 ```
 
-#### 🔄 Option 3: Direct Git Clone into Skills Directory
+#### Option 3: Direct Git Clone into Skills Directory
 
 ```bash
 # macOS/Linux
@@ -115,7 +115,7 @@ Move-Item windsurf-netlify-skills\netlify-* .
 Remove-Item windsurf-netlify-skills -Recurse -Force
 ```
 
-### ✅ Verify Installation
+### Verify Installation
 
 Check that the skills were copied:
 
@@ -133,7 +133,7 @@ dir %USERPROFILE%\.windsurf\skills\netlify-*
 You should see 8 directories:
 
 <details>
-<summary>📂 View all skill directories</summary>
+<summary>View all skill directories</summary>
 
 - `netlify-blobs`
 - `netlify-creating-sites`
@@ -146,11 +146,11 @@ You should see 8 directories:
 
 </details>
 
-### 🎯 Using the Skills
+### Using the Skills
 
 Once installed, Windsurf will automatically reference these skills when working on Netlify projects. No additional setup needed.
 
-> **🤖 How it works**: Windsurf's AI assistant will automatically detect when you're working on Netlify projects and provide context-aware suggestions based on these skills.
+> **How it works**: Windsurf's AI assistant will automatically detect when you're working on Netlify projects and provide context-aware suggestions based on these skills.
 
 ## 📖 Skill Categories
 
@@ -158,30 +158,30 @@ Once installed, Windsurf will automatically reference these skills when working 
 <tr>
 <td width="33%" valign="top">
 
-### 🎓 Getting Started
+### Getting Started
 Start with **Creating Sites** to learn how to initialize and link Netlify sites.
 
-### 🔌 Building APIs
+### Building APIs
 Use **Serverless Functions** for traditional API endpoints and **Edge Functions** for low-latency edge computing.
 
 </td>
 <td width="33%" valign="top">
 
-### 💾 Data Persistence
+### Data Persistence
 - **DB** - Structured, relational data with SQL
 - **Blobs** - Unstructured data, files, and caching
 
-### 👥 User Interaction
+### User Interaction
 - **Forms** - Contact forms, signups, and submissions
 - **Environment Variables** - Secure configuration management
 
 </td>
 <td width="33%" valign="top">
 
-### 🎨 Media Optimization
+### Media Optimization
 - **Image CDN** - Responsive images and on-demand transformations
 
-### 🔗 Quick Links
+### Quick Links
 - [Installation](#-quick-start)
 - [Examples](#-examples)
 - [Resources](#-resources)
@@ -216,7 +216,7 @@ metadata:
 
 ## 📝 Examples
 
-### 🏗️ Creating a New Netlify Site
+### Creating a New Netlify Site
 
 ```bash
 # Initialize new site
@@ -226,7 +226,7 @@ netlify init
 netlify dev
 ```
 
-### ⚡ Building a Serverless API
+### Building a Serverless API
 
 ```typescript
 // netlify/functions/api.mts
@@ -241,7 +241,7 @@ export const config = {
 };
 ```
 
-### 📦 Using Netlify Blobs for Storage
+### Using Netlify Blobs for Storage
 
 ```typescript
 import { getStore } from "@netlify/blobs";
@@ -255,10 +255,10 @@ const value = await store.get("key");
 
 These skills are maintained for personal use but contributions are welcome:
 
-1. 🍴 Fork the repository
-2. 🌿 Create a feature branch
-3. ✏️ Make your changes
-4. 🚀 Submit a pull request
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
 ---
 
@@ -268,7 +268,7 @@ These skills are maintained for personal use but contributions are welcome:
 <tr>
 <td width="50%">
 
-**� Official Documentation**
+**Official Documentation**
 - [Netlify Documentation](https://docs.netlify.com/)
 - [Netlify CLI](https://docs.netlify.com/cli/get-started/)
 - [Netlify Functions](https://docs.netlify.com/functions/overview/)
@@ -276,7 +276,7 @@ These skills are maintained for personal use but contributions are welcome:
 </td>
 <td width="50%">
 
-**🛠️ Platform Features**
+**Platform Features**
 - [Edge Functions](https://docs.netlify.com/edge-functions/overview/)
 - [Netlify Blobs](https://docs.netlify.com/blobs/overview/)
 - [Netlify DB](https://docs.netlify.com/database/overview/)
