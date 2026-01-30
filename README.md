@@ -64,12 +64,16 @@
 
 **macOS / Linux / Git Bash:**
 ```bash
-git clone https://github.com/jaredm563/windsurf-netlify-skills.git && cd windsurf-netlify-skills && ./install.sh
+git clone https://github.com/jaredm563/windsurf-netlify-skills.git
+cd windsurf-netlify-skills
+./install.sh
 ```
 
 **Windows PowerShell:**
 ```powershell
-git clone https://github.com/jaredm563/windsurf-netlify-skills.git; cd windsurf-netlify-skills; .\install.ps1
+git clone https://github.com/jaredm563/windsurf-netlify-skills.git
+cd windsurf-netlify-skills
+.\install.ps1
 ```
 
 That's it! Windsurf will automatically use these skills when working on Netlify projects.
@@ -90,45 +94,7 @@ Copy-Item netlify-* -Destination $env:USERPROFILE\.windsurf\skills\ -Recurse
 
 </details>
 
-## 📖 Skill Categories
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### Getting Started
-Start with **Creating Sites** to learn how to initialize and link Netlify sites.
-
-### Building APIs
-Use **Serverless Functions** for traditional API endpoints and **Edge Functions** for low-latency edge computing.
-
-</td>
-<td width="33%" valign="top">
-
-### Data Persistence
-- **DB** - Structured, relational data with SQL
-- **Blobs** - Unstructured data, files, and caching
-
-### User Interaction
-- **Forms** - Contact forms, signups, and submissions
-- **Environment Variables** - Secure configuration management
-
-</td>
-<td width="33%" valign="top">
-
-### Media Optimization
-- **Image CDN** - Responsive images and on-demand transformations
-
-### Quick Links
-- [Installation](#-quick-start)
-- [Examples](#-examples)
-- [Resources](#-resources)
-
-</td>
-</tr>
-</table>
-
-## 🛠️ Skill Structure
+## ️ Skill Structure
 
 Each skill follows a consistent structure:
 
