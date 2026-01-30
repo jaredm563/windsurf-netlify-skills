@@ -62,11 +62,29 @@
 
 ## 🚀 Quick Start
 
-> **Tip**: Choose the installation method that works best for your workflow
+### One-Line Install (Recommended)
 
-### Importing into Windsurf
+```bash
+# Clone and run the installer
+git clone https://github.com/jaredm563/windsurf-netlify-skills.git && cd windsurf-netlify-skills && ./install.sh
+```
 
-#### Option 1: Clone and Copy (Recommended)
+The installer will:
+- Detect your platform automatically
+- Create the skills directory if needed
+- Check for existing skills and prompt before overwriting
+- Copy all 8 skills to the correct location
+
+**Windows PowerShell:**
+```powershell
+git clone https://github.com/jaredm563/windsurf-netlify-skills.git; cd windsurf-netlify-skills; .\install.ps1
+```
+
+---
+
+### Manual Installation
+
+#### Option 1: Clone and Copy
 
 ```bash
 # Clone the repository
